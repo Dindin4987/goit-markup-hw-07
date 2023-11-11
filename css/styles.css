@@ -173,12 +173,20 @@ button:hover {
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 72px;
-    width: 1158px;
+   display: flex; 
+   align-items: center; 
+   justify-content: space-between; 
+   height: 72px; 
+   width: 1158px; 
 }
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .main-nav {
     list-style: none;
@@ -584,3 +592,23 @@ footer > h3:hover {
     color: teal;
 }
 
+
+/* media queries */
+@media (min-width: 428px) {
+    .container {
+        width: 428px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+            width: 768px;
+        }
+}
+
+
+@media (mid-width: 1200px) {
+    .container {
+            width: 1200px;
+        }
+}
