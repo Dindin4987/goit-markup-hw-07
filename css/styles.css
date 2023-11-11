@@ -177,7 +177,7 @@ button:hover {
    align-items: center; 
    justify-content: space-between; 
    height: 72px; 
-   width: 1158px; 
+   /* width: 1158px;  */
 }
 
 .container {
@@ -192,7 +192,7 @@ button:hover {
     list-style: none;
         display: flex;
         gap: 40px;
-        margin-left: 156px;
+        margin-left: 96px;
         align-items: center;
         height: 72px;
         margin-top: 24px;
@@ -204,6 +204,7 @@ button:hover {
     display: flex;
     gap: 40px;
     justify-content: flex-end;
+    margin-right: 96px;
     margin-top: 24px;
         margin-bottom: 24px;
 }
@@ -238,6 +239,7 @@ button:hover {
     display: flex;
         justify-content: space-around;
         margin: 0 156px;
+        gap:24px;
 }
 
 
