@@ -172,7 +172,7 @@ button:hover {
     text-decoration: none;
 }
 
-.container {
+.container1 {
    display: flex; 
    align-items: center; 
    justify-content: space-between; 
@@ -592,7 +592,6 @@ footer > h3:hover {
     color: teal;
 }
 
-
 /* media queries */
 @media (min-width: 428px) {
     .container {
@@ -602,13 +601,17 @@ footer > h3:hover {
 
 @media (min-width: 768px) {
     .container {
-            width: 768px;
-        }
+        width: 768px;
+    }
 }
 
 
 @media (mid-width: 1200px) {
     .container {
-            width: 1200px;
-        }
+        width: 1200px;
+    }
 }
+
+
+
+
