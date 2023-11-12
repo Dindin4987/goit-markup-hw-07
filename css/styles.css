@@ -456,11 +456,6 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0
     justify-content: space-around;
     margin: 0 156px 120px 156px;
     column-gap: 24px;
-    flex-wrap: wrap;
-}
-
-.team {
-    width: 100%;
 }
 
 .team ul li {
@@ -619,7 +614,7 @@ footer > h3:hover {
 }
 
 
-@media (mid-width: 1200px) {
+@media (min-width: 1200px) {
     .container {
         width: 1200px;
     }
