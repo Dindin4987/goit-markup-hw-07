@@ -631,11 +631,14 @@ footer > h3:hover {
 
     .footer-placeholder {
     width: 270px;
+    margin-bottom: 24px;
     }
 
     .footer-subscribe {
     display: inline-block;
+    justify-content: center;
     }
+
 
 }
 
