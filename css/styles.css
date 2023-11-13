@@ -18,6 +18,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(46, 47, 66, 0.7);
+    flex-wrap: wrap;
 }
 
 .hero-button {
@@ -236,6 +237,10 @@ button:hover {
         gap: 24px;
 }
 
+.about-item {
+    margin-bottom: 30px;
+}
+
 .pics {
     display: flex;
         justify-content: space-around;
@@ -270,6 +275,7 @@ h2 {
     line-height: 21px;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-left: 90px;
 }
 
 .web2 {
@@ -433,16 +439,13 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0
 
 .main-nav .main-header-menu-link:hover {
     border-radius: 4px;
-        /* background: var(--OCEAN, #404BBF); */
         color: #404BBF;
-        /* box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10); */ */
 }
+        
 
 .main-header-ctas .ctas-link:hover {
     border-radius: 4px;
-    /* background: var(--OCEAN, #404BBF); */
     color: #404BBF;
-    /* box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10); */ */
 }
 .about-icon {
     padding: 24px 100px;
@@ -454,18 +457,24 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0
     list-style: none;
     display: flex;
     justify-content: space-around;
-    margin: 0 156px 120px 156px;
+    margin: 0 15px 120px 15px;
     column-gap: 24px;
+    flex-wrap: wrap;
 }
 
 .team ul li {
     text-align: center;
 }
 
+.team {
+    width: 100%;
+}
+
 .team-box {
     width: 264px;
     height: 428px;
     background-color: #F4F4FD;
+    margin-bottom: 36px;
 }
 
 
@@ -495,9 +504,10 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0
 
 .clients-icon {
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    /* justify-content: center; */
+    gap: 12px;
     margin-bottom: 120px;
+    flex-wrap: wrap;
 }
 
 .client-icon {
@@ -514,7 +524,7 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0
 footer {
     background: var(--NAVY-BLUE, #2E2F42);
     padding-top: 101.5px;
-    padding-left: 156px;
+    /* padding-left: 156px; */
 }
 
 .footer-text {
@@ -525,7 +535,8 @@ footer {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
-    padding-bottom: 100px;
+    /* padding-bottom: 56px; */
+    margin-left: 90px;
 }
 
 footer > h3:hover {
@@ -537,6 +548,11 @@ footer > h3:hover {
 
 .footer-container {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-list {
+    margin-bottom: 56px;
 }
 
 .footer-2 {
@@ -546,7 +562,7 @@ footer > h3:hover {
 
 .footer-team-socials {
     display: flex;
-    margin-left: 90px;
+    margin-left: 90px; 
     gap: 15px;
 }
 
@@ -596,13 +612,34 @@ footer > h3:hover {
 }
 
 /* media queries */
-@media (min-width: 428px) {
+@media (min-width: 428px) and (max-width: 767px) {
     .container {
         width: 428px;
     }
+
+    .client-icon {
+        flex-basis: calc(100% / 2 - 30px);
+    }
+
+    .about-icon {
+    display: none;
+    }
+
+    .what-doing {
+    display: none;
+    }
+
+    .footer-placeholder {
+    width: 270px;
+    }
+
+    .footer-subscribe {
+    display: inline-block;
+    }
+
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .container {
         width: 768px;
     }
@@ -610,6 +647,19 @@ footer > h3:hover {
     .about-item,
     .team-box {
         flex-basis: calc(100% / 2 - 30px);
+    }
+
+    .client-icon {
+        flex-basis: calc(100% / 3 - 30px);
+    }
+
+    .about-icon {
+        display: none;
+    }
+ 
+
+    .what-doing {
+        display: none;
     }
 }
 
