@@ -626,6 +626,8 @@ padding: 37px;
 
 .js-close-menu {
     position: absolute;
+    top: 16px;
+    right: 16px;
 }
 
 .mobile-navbar {
