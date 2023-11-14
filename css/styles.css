@@ -729,10 +729,6 @@ padding: 37px;
         display: none;
     }
 
-    .mobile-menu.is-open {
-        transform: translateX(0);
-    }
-
     .mobile-menu {
         display: block;
         height: 100vh;
@@ -746,6 +742,16 @@ padding: 37px;
         height: 796px;
         flex-shrink: 0;
     }
+}
+
+@media (max-width: 767px) {
+    .container1 {
+        display: none;
+        }
+    
+    .mobile-menu.is-open {
+        transform: translateX(0);
+    }   
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
